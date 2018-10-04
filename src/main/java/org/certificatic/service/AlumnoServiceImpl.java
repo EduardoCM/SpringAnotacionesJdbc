@@ -19,38 +19,33 @@ public class AlumnoServiceImpl implements AlumnoService {
 	AlumnoDAO alumnoDao;
 
 	@Override
-	public void save(Alumno almno) {
-             alumnoDao.save(almno);		
+	public boolean save(Alumno almno) {
+          return   alumnoDao.save(almno);	 	
 	}
 
 	@Override
 	public List<Alumno> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return alumnoDao.findAll();
 	}
 
 	@Override
 	public Alumno findById(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return alumnoDao.findById(id);
 	}
 
 	@Override
 	public List<Alumno> findByNombre(String nombre) {
-		// TODO Auto-generated method stub
-		return null;
+		return alumnoDao.findByNombre(nombre);
 	}
 
 	@Override
 	public boolean update(Alumno alumno) {
-		// TODO Auto-generated method stub
-		return false;
+		return alumnoDao.update(alumno);
 	}
 
 	@Override
 	public boolean delete(int idAlumno) {
-		// TODO Auto-generated method stub
-		return false;
+		return alumnoDao.delete(idAlumno);
 	}
 	
 

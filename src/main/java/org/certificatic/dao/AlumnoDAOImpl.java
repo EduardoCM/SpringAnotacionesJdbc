@@ -9,7 +9,6 @@ import javax.sql.DataSource;
 import org.apache.log4j.Logger;
 import org.certificatic.bean.Alumno;
 import org.certificatic.bean.AlumnoRowMapper;
-import org.certificatic.bean.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
@@ -27,7 +26,7 @@ public class AlumnoDAOImpl implements AlumnoDAO {
 	
 	@Autowired
 	public void setJdbcTemplate(DataSource dataSource) {
-		this.jdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
+		this.jdbcTemplate = new NamedParameterJdbcTemplate(dataSource); 
 	}
 
 	@Override

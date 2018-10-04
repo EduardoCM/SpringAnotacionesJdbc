@@ -6,7 +6,7 @@ import org.certificatic.bean.Alumno;
 
 public interface AlumnoService {
 	
-	public void save(Alumno almno);
+	public boolean save(Alumno almno);
 	public List<Alumno> findAll();
 	public Alumno findById(int id);
 	public List<Alumno> findByNombre(String nombre);

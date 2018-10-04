@@ -13,7 +13,7 @@ public class AlumnoRowMapper implements RowMapper<Alumno> {
 		alumno.setIdAlumno(rs.getInt("idAlumno"));
 		alumno.setNombre(rs.getString("nombre"));
 		alumno.setApellido(rs.getString("apellido"));
-		return alumno;
+		return alumno; 
 	}
 
 }

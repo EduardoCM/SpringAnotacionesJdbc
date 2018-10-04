@@ -6,6 +6,7 @@ public class Alumno {
 	private String nombre;
 	private String apellido;
 
+	
 	public int getIdAlumno() {
 		return idAlumno;
 	}
